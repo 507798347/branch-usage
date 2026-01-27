@@ -10,7 +10,7 @@ func main() {
 
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
-			"message": "奥特曼",
+			"message": "Aoteman",
 		})
 	})
 	_ = r.Run(":8080")
