@@ -1,9 +1,8 @@
 package main
 
 import (
-	"net/http"
-
 	"github.com/gin-gonic/gin"
+	"net/http"
 )
 
 func main() {
@@ -14,5 +13,5 @@ func main() {
 			"message": "迪迦",
 		})
 	})
-	_ = r.Run()
+	_ = r.Run(":8080")
 }
