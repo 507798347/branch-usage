@@ -3,7 +3,7 @@ FROM golang:1.25-alpine as builder
 ENV CGO_ENABLED=0 \
     GOOS=linux \
     GOARCH=amd64
-    GOPROXY=https://goproxy.cn,direct
+    GOPROXY=https://goproxy.io,https://mirrors.aliyun.com/goproxy/,direct
 
 WORKDIR /dir
 
