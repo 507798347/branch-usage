@@ -6,7 +6,7 @@ ENV CGO_ENABLED=0 \
 
 WORKDIR /dir
 
-COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go mod download
 
 # 这个. 当执行docker build命令时所在的目录是backend/branch-usage
