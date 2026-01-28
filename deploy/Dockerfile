@@ -13,7 +13,7 @@ RUN go mod download
 # 这个. 当执行docker build命令时所在的目录是backend/branch-usage
 COPY . .
 
-# 下载依赖
+# 开始构建
 RUN go build -ldflags "-s -w" -o test ./cmd/server.go
 
 
